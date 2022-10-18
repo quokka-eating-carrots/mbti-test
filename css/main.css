@@ -1,0 +1,10 @@
+#main {
+  background-color: whitesmoke;
+  width: 80%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.main--text {
+  font-weight: 700;
+}
