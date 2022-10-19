@@ -78,7 +78,19 @@ function calcResult () {
 
 function setResult () {
   let point = calcResult();
-  const resultName = document.querySelector('.resultname')
+  const resultName = document.querySelector('.resultName');
+  resultName.innerHTML = infoList[point].name;
+
+  const resultImg = document.createElement('img');
+  const imgDiv = document.querySelector('#resultImg');
+  let imgURL = `https://raw.githubusercontent.com/nani6765/MyMBTI/main/%235.%20Img%20Version/img/image-${point}.png`
+  resultImg.src = imgURL;
+  resultImg.alt = point;
+  resultImg.className += ' img-fluid'
+  imgDiv.appendChild(resultImg);
+
+  const resultDesc = document.querySelector('.resultDesc');
+  resultDesc.innerHTML = infoList[point].desc;
 }
 
 function goResult () {
@@ -95,6 +107,7 @@ function goResult () {
     }, 450);
   }, 450);
 
+  setResult();
   calcResult();
 }
 
