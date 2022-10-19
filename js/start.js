@@ -5,6 +5,8 @@ function addAnswer (answerText, qIdx) {
   const a = document.querySelector('.answerBox');
   const answerBtn = document.createElement('button');
   answerBtn.className = 'answerList'
+  answerBtn.className += ' my-3 py-3 mx-auto'
+  answerBtn.className += ' fadeIn'
   a.appendChild(answerBtn);
   answerBtn.innerHTML = answerText;
 
@@ -12,9 +14,14 @@ function addAnswer (answerText, qIdx) {
     const children = document.querySelectorAll('.answerList');
     for (let i = 0; i < children.length; i += 1) {
       children[i].disabled = true;
-      children[i].style.display = 'none';
+      children[i].className += ' fadeOut';
     }
-    goNext(qIdx += 1);
+    setTimeout(() => {
+      for (let i = 0; i < children.length; i += 1) {
+        children[i].style.display = 'none';
+      }
+      goNext(qIdx += 1);
+    }, 450)
   });
 }
 
