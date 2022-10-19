@@ -6,6 +6,13 @@
   border-radius: 20px;
 }
 
+#shareResult {
+  background-color: whitesmoke;
+  width: 80%;
+  text-align: center;
+  border-radius: 20px;
+}
+
 .kakao {
   color: white;
   background-color: #fee500;
@@ -16,4 +23,16 @@
 .kakao:hover {
   background-color: whitesmoke;
   color: #fee500;
+}
+
+.goHome {
+  color: white;
+  background-color: #C4B5DB;
+  border: 0;
+  border-radius: 20px;
+}
+
+.goHome:hover {
+  background-color: whitesmoke;
+  color: #C4B5DB;
 }

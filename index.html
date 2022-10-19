@@ -31,6 +31,16 @@
   <link rel="stylesheet" href="./css/qna.css">
   <link rel="stylesheet" href="./css/animation.css">
   <link rel="stylesheet" href="./css/result.css">
+
+  <!-- KAKAO SHARE -->
+  <!-- <script src="https://t1.kakaocdn.net/kakao_js_sdk/${VERSION}/kakao.min.js"
+  integrity="${INTEGRITY_VALUE}" crossorigin="anonymous"></script> -->
+  <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.0.0/kakao.min.js"
+          integrity="sha384-PFHeU/4gvSH8kpvhrigAPfZGBDPs372JceJq3jAXce11bVA6rMvGWzvP4fMQuBGL" crossorigin="anonymous"></script>
+  <script>
+    Kakao.init('a4730b180890ae5f3ae7a1a8e5fdc2f2');
+    Kakao.isInitialized();
+  </script>
   
   <title>십이간지 연애유형</title>
 </head>
@@ -63,11 +73,12 @@
         
       </div>
       <div class="resultDesc"></div>
-      <button type="button" class="mt-3 kakao py-2 px-3">공유하기</button>
+      <button type="button" class="mt-3 kakao py-2 px-3" onclick="js:kakaoShare()">공유하기</button>
     </section>
   </div>
 
   <script src="./js/data.js"></script>
   <script src="./js/start.js"></script>
+  <script src="./js/share.js"></script>
 </body>
 </html>
