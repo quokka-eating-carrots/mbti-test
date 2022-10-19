@@ -1,7 +1,7 @@
 # mbti-test
 
 [참고 강의](https://edu.goorm.io/lecture/25652/하루-10분-web-project-html-js-css로-나만의-mbti-사이트-만들기)<br>
-[완성 페이지]()
+[완성 페이지](https://profound-fenglisu-8cfc4f.netlify.app)
 
 ---
 `221018`
