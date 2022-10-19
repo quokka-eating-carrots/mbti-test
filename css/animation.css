@@ -27,3 +27,13 @@
   animation: fadeOut;
   animation-duration: .5s;
 }
+
+.fadeIn-1 {
+  animation: fadeIn;
+  animation-duration: 1s;
+}
+
+.fadeOut-1 {
+  animation: fadeOut;
+  animation-duration: 1s;
+}
