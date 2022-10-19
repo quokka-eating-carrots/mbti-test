@@ -22,3 +22,21 @@
   background-color: #C4B5DB;
   color: whitesmoke;
 }
+
+.status {
+  height: 10px;
+  width: 80%;
+  background-color: whitesmoke;
+  border-radius: 20px;
+}
+
+.statusBar {
+  height: 100%;
+  border-radius: 20px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#c4b5db+0,b2a3c9+100 */
+  background: #c4b5db; /* Old browsers */
+  background: -moz-linear-gradient(left,  #c4b5db 0%, #b2a3c9 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #c4b5db 0%,#b2a3c9 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #c4b5db 0%,#b2a3c9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c4b5db', endColorstr='#b2a3c9',GradientType=1 ); /* IE6-9 */
+}
